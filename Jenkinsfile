@@ -4,7 +4,6 @@ node {
     }
 
     stage('Test') {
-        sh 'make check'
         echo "Test"
     }
 
