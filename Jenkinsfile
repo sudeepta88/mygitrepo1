@@ -1,14 +1,14 @@
 node {
     stage('Build') {
-        sh 'make'
+        echo "Build"
     }
 
     stage('Test') {
         sh 'make check'
-        junit 'reports/**/*.xml'
+        echo "Test"
     }
 
     stage('Deploy') {
-        sh 'make publish'
+        echo "Deploy"
     }
 }
